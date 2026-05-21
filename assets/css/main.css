@@ -46,3 +46,112 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Sticky site navigation */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(15, 20, 25, 0.85);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.site-nav .container {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-nav .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.site-nav .brand img {
+  height: 32px;
+  width: auto;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Mobile hamburger — checkbox-hack, no JS */
+.site-nav .nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.site-nav .nav-toggle-label span,
+.site-nav .nav-toggle-label span::before,
+.site-nav .nav-toggle-label span::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 1px;
+}
+
+.site-nav .nav-toggle-label span {
+  position: relative;
+}
+
+.site-nav .nav-toggle-label span::before,
+.site-nav .nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+
+.site-nav .nav-toggle-label span::before {
+  top: -7px;
+}
+
+.site-nav .nav-toggle-label span::after {
+  top: 7px;
+}
+
+@media (max-width: 640px) {
+  .site-nav .nav-toggle-label {
+    display: block;
+  }
+
+  .site-nav .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+  }
+
+  .site-nav .nav-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+}
