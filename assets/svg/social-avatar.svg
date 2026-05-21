@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="LAN Lab">
+  <rect width="1000" height="1000" fill="#0f1419"/>
+  <polygon points="500,240 640,320 640,460 500,540 360,460 360,320" fill="#2dd4bf"/>
+  <circle cx="640" cy="320" r="32" fill="#f59e0b" stroke="#0f1419" stroke-width="5"/>
+  <text x="500" y="700" font-family="Inter, system-ui, sans-serif"
+        font-size="120" font-weight="900" letter-spacing="-4"
+        fill="#e6e8eb" text-anchor="middle">LAN Lab</text>
+  <text x="500" y="780" font-family="Inter, system-ui, sans-serif"
+        font-size="32" font-weight="500" letter-spacing="5"
+        fill="#8b95a1" text-anchor="middle">IIT KHARAGPUR</text>
+</svg>

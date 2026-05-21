@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="LAN Lab social card">
+  <rect width="1200" height="630" fill="#0f1419"/>
+  <polygon points="200,200 320,260 320,370 200,430 80,370 80,260" fill="#2dd4bf"/>
+  <circle cx="320" cy="260" r="22" fill="#f59e0b" stroke="#0f1419" stroke-width="4"/>
+  <text x="400" y="290" font-family="Inter, system-ui, sans-serif"
+        font-size="80" font-weight="900" letter-spacing="-3"
+        fill="#e6e8eb">LAN Lab</text>
+  <text x="400" y="345" font-family="Inter, system-ui, sans-serif"
+        font-size="26" font-weight="600"
+        fill="#2dd4bf">Learning and Automation for Networks</text>
+  <text x="400" y="395" font-family="Inter, system-ui, sans-serif"
+        font-size="20" font-weight="400"
+        fill="#8b95a1">Causal AI, reinforcement learning, and game-theoretic</text>
+  <text x="400" y="425" font-family="Inter, system-ui, sans-serif"
+        font-size="20" font-weight="400"
+        fill="#8b95a1">design for 6G and beyond.</text>
+  <text x="400" y="510" font-family="Inter, system-ui, sans-serif"
+        font-size="18" font-weight="500" letter-spacing="3"
+        fill="#8b95a1">G.S. SANYAL SCHOOL OF TELECOMMUNICATIONS · IIT KHARAGPUR</text>
+</svg>
