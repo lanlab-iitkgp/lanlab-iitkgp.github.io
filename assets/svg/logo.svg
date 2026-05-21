@@ -1,17 +1,7 @@
-<svg viewBox="0 0 260 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LAN Lab logo">
-  <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
-            markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
-    </marker>
-  </defs>
-  <path d="M 40 65 Q 40 18 90 18 L 170 18 Q 220 18 220 65 Q 220 112 170 112 L 90 112 Q 40 112 40 65"
-        stroke="#f59e0b" stroke-width="2.5" fill="none"
-        stroke-dasharray="5 4" marker-end="url(#arrow)"/>
-  <text x="130" y="80" font-family="Inter, system-ui, sans-serif"
-        font-size="42" font-weight="800" letter-spacing="3"
-        fill="#2dd4bf" text-anchor="middle">LAN</text>
-  <text x="130" y="103" font-family="Inter, system-ui, sans-serif"
-        font-size="9" font-weight="500" letter-spacing="4"
-        fill="#8b95a1" text-anchor="middle">LAB · IIT KHARAGPUR</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-label="LAN Lab">
+  <polygon points="40,8 70,24 70,56 40,72 10,56 10,24" fill="#2dd4bf"/>
+  <circle cx="70" cy="24" r="7" fill="#f59e0b" stroke="#0f1419" stroke-width="1.5"/>
+  <text x="90" y="52" font-family="Inter, system-ui, sans-serif"
+        font-size="32" font-weight="800" letter-spacing="-1"
+        fill="#e6e8eb">LAN Lab</text>
 </svg>
