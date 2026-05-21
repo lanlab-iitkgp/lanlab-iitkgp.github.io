@@ -1,0 +1,78 @@
+/* LAN Lab — component styles
+   Hero, research-thrust cards, and small layout helpers. */
+
+/* Layout helper — shared by nav and page sections */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding: 5rem 0 3rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.hero .tagline {
+  color: var(--muted);
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin-top: 1rem;
+}
+
+/* Research-thrust cards */
+.thrusts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem 0;
+}
+
+.thrust-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.thrust-card:hover {
+  border-color: var(--accent);
+}
+
+.thrust-card h3 {
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.thrust-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.thrust-card .more {
+  color: var(--accent-2);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+/* Transitional notice */
+.construction-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 2rem 0;
+}
