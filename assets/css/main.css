@@ -1,0 +1,48 @@
+/* LAN Lab — main stylesheet
+   Design tokens and base styles. See CLAUDE.md > Design system. */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0f1419;        /* page background */
+  --surface: #1a2128;   /* cards, nav */
+  --text: #e6e8eb;      /* body text */
+  --muted: #8b95a1;     /* secondary text */
+  --accent: #2dd4bf;    /* teal — links, primary accents */
+  --accent-2: #f59e0b;  /* amber — highlights, CTAs */
+  --border: #2a323c;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
