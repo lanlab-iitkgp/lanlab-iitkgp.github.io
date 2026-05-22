@@ -173,12 +173,6 @@ a:hover {
   font-size: 0.9rem;
 }
 
-.site-footer .footer-links {
-  color: var(--muted);
-  font-size: 0.85rem;
-  margin-top: 0.4rem;
-}
-
 .site-footer .sep {
   margin: 0 0.4rem;
   color: var(--border);
