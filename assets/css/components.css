@@ -358,3 +358,103 @@
   background: var(--accent-2);
   text-decoration: none;
 }
+
+/* Section subtitle */
+.section-sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Course tables — teaching.html */
+.table-wrap {
+  overflow-x: auto;
+}
+
+.course-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+}
+
+/* Empty/note table (Section A) — no need to force a scroll width */
+.course-table--note {
+  min-width: 0;
+}
+
+.course-table th {
+  text-align: left;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.course-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.95rem;
+  vertical-align: top;
+}
+
+.course-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.course-table tbody tr {
+  transition: background 0.15s;
+}
+
+.course-table tbody tr:hover {
+  background: var(--surface);
+}
+
+.course-table .course-name .code {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.course-table .table-note {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Offering chips */
+.offerings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  white-space: nowrap;
+}
+
+/* Pending chip — materials not yet linked */
+.chip-pending {
+  color: var(--muted);
+  cursor: default;
+}
+
+/* Live chip — links to a materials repo (used once repos exist) */
+a.chip {
+  color: var(--accent);
+}
+
+a.chip:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
