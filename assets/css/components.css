@@ -575,3 +575,55 @@ a.chip:hover {
   border-top: 1px solid var(--border);
   color: var(--muted);
 }
+
+/* Homepage "Recent Updates" band */
+.news-section {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 0;
+  margin-top: 1rem;
+}
+
+.news-section h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.news-status {
+  color: var(--muted);
+}
+
+.news-items {
+  list-style: none;
+}
+
+.news-item {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  display: block;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+}
+
+.news-text {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.news-link {
+  color: var(--accent);
+  font-weight: 600;
+}
