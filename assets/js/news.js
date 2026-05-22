@@ -35,8 +35,11 @@
     list.appendChild(el('p', 'news-status', message));
   }
 
-  function renderItem(item) {
-    const li = el('li', 'news-item');
+  function renderItem(item, isLatest) {
+    const li = el('li', 'news-item' + (isLatest ? ' news-item--latest' : ''));
+    if (isLatest) {
+      li.appendChild(el('span', 'news-badge', 'Latest'));
+    }
     li.appendChild(el('span', 'news-date', formatDate(item.date)));
     const body = el('span', 'news-text', item.text || '');
     if (item.link) {
@@ -66,8 +69,8 @@
       });
       list.textContent = '';
       const ul = el('ul', 'news-items');
-      items.slice(0, MAX_ITEMS).forEach(function (item) {
-        ul.appendChild(renderItem(item));
+      items.slice(0, MAX_ITEMS).forEach(function (item, i) {
+        ul.appendChild(renderItem(item, i === 0));
       });
       list.appendChild(ul);
     })
