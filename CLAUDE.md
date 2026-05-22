@@ -15,6 +15,10 @@ identity becomes the top-level brand.
 ## Tech stack
 
 - Plain HTML5 + CSS3 + minimal vanilla JS. No build step, no framework.
+- **Exception to "minimal JS":** the hero background runs a small vanilla-JS
+  `<canvas>` network-constellation animation (`assets/js/main.js`). No
+  libraries — this is a deliberate, approved exception for the lab's
+  signature visual.
 - Hosted via GitHub Pages from `main` branch (root).
 - Fonts: Inter via Google Fonts.
 - All work happens on branch `lan-lab-revamp`; merged to `main` only when ready.
