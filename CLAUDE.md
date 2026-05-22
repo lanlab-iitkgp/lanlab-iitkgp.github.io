@@ -113,6 +113,24 @@ Home (`index.html`) sections, top to bottom:
   KGP), Prof. Tansu Alpcan (Melbourne), Prof. Marimuthu Palaniswami (Melbourne),
   Ericsson Research.
 
+## Publications pipeline
+
+The Publications page is auto-updated, not hand-maintained:
+
+- `scripts/fetch-publications.py` — standard-library Python (no pip deps).
+  Resolves the PI's ORCID (`0000-0002-2246-9905`) to an OpenAlex author id,
+  cursor-paginates all works, de-duplicates preprint/published pairs by title
+  similarity, and writes `assets/data/publications.json`.
+- `pages/publications.html` + `assets/js/publications.js` render that JSON
+  in-browser, grouped by year. The browser reads the committed JSON only — it
+  never calls OpenAlex directly.
+- `.github/workflows/update-publications.yml` re-runs the script weekly (Monday
+  06:00 UTC) and on manual dispatch, committing the JSON only when it changed.
+  It activates once the repo is on GitHub with the workflow on the default
+  branch.
+
+To refresh the data locally: `python3 scripts/fetch-publications.py`.
+
 ## Workflow
 
 - All edits on branch `lan-lab-revamp`. Do not commit to `main` directly.

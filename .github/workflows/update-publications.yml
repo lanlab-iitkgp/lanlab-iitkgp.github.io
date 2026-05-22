@@ -1,0 +1,39 @@
+# Weekly refresh of assets/data/publications.json from OpenAlex.
+# This workflow activates once the repo is on GitHub with this file on the
+# default branch; until then it has no effect.
+name: Update publications
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"    # every Monday, 06:00 UTC
+  workflow_dispatch: {}      # allow manual runs from the Actions tab
+
+permissions:
+  contents: write            # required to commit the refreshed JSON
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch publications from OpenAlex
+        run: python3 scripts/fetch-publications.py
+
+      - name: Commit refreshed data if it changed
+        run: |
+          if git diff --quiet -- assets/data/publications.json; then
+            echo "publications.json unchanged — nothing to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/data/publications.json
+            git commit -m "Refresh publications data from OpenAlex"
+            git push
+          fi
