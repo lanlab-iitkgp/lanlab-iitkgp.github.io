@@ -134,15 +134,13 @@
   margin-top: 0.75rem;
 }
 
-/* Pull-quote intro — used for the Teaching page philosophy line */
+/* Italic philosophy line — Teaching page intro, kept at body scale */
 .page-header .lead-quote {
-  color: var(--text);
-  font-size: clamp(1.4rem, 3.5vw, 2rem);
-  font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-style: italic;
   max-width: 640px;
-  margin-top: 1.1rem;
+  margin-top: 0.75rem;
 }
 
 /* Interior page sections */
