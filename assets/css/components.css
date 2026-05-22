@@ -134,6 +134,17 @@
   margin-top: 0.75rem;
 }
 
+/* Pull-quote intro — used for the Teaching page philosophy line */
+.page-header .lead-quote {
+  color: var(--text);
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  max-width: 640px;
+  margin-top: 1.1rem;
+}
+
 /* Interior page sections */
 .page-section {
   padding: 1.5rem 0;
