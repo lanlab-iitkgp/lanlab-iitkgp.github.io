@@ -155,3 +155,31 @@ a:hover {
     display: flex;
   }
 }
+
+/* Site footer — shared across pages */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.site-footer .container {
+  text-align: center;
+}
+
+.site-footer .footer-org {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.site-footer .footer-links {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.site-footer .footer-links .sep {
+  margin: 0 0.5rem;
+  color: var(--border);
+}

@@ -45,7 +45,7 @@
   pointer-events: none;
 }
 
-.hero .kicker {
+.kicker {
   color: var(--accent);
   font-size: 0.95rem;
   font-weight: 700;
@@ -114,4 +114,170 @@
   font-size: 0.85rem;
   text-align: center;
   padding: 2rem 0;
+}
+
+/* Interior page header */
+.page-header {
+  padding: 3rem 0 1rem;
+}
+
+.page-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.page-header .intro {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 760px;
+  margin-top: 0.75rem;
+}
+
+/* Interior page sections */
+.page-section {
+  padding: 1.5rem 0;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+/* Lab-lead band — a slim block, distinct from the student member cards */
+.lab-lead {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.lab-lead img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.lab-lead p {
+  flex: 1;
+  min-width: 220px;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.lab-lead a {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Member cards — people with a photo */
+.member-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.member-card {
+  display: flex;
+  gap: 1rem;
+  width: 340px;
+  max-width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: var(--bg);
+  flex-shrink: 0;
+}
+
+.member-card .member-name {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.member-card .member-role {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.15rem;
+}
+
+.member-card .member-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Project cards — B.Tech work organized by project */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.project-card h3 {
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.project-card .project-brief {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.project-card .project-students {
+  color: var(--text);
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.project-card .project-students strong {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* Text-style people lists — alumni, collaborators */
+.people-list {
+  list-style: none;
+}
+
+.people-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.people-list li:last-child {
+  border-bottom: none;
+}
+
+.people-list .person-name {
+  color: var(--text);
+  font-weight: 600;
 }
