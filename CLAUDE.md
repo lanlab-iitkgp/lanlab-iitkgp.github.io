@@ -3,7 +3,8 @@
 Static GitHub Pages site for the **Learning and Automation for Networks (LAN) Lab**
 at the G.S. Sanyal School of Telecommunications, IIT Kharagpur. PI: Dr. Dibbendu Roy.
 
-Deployed at: https://dibbend8.github.io/dibbendu/
+Repository: https://github.com/lanlab-iitkgp/lanlab-iitkgp.github.io
+Deployed at: https://lanlab-iitkgp.github.io/
 
 ## Why this revamp exists
 
