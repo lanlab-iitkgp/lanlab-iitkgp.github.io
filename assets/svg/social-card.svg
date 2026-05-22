@@ -1,7 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="LAN Lab social card">
   <rect width="1200" height="630" fill="#0f1419"/>
-  <polygon points="200,200 320,260 320,370 200,430 80,370 80,260" fill="#2dd4bf"/>
-  <circle cx="320" cy="260" r="22" fill="#f59e0b" stroke="#0f1419" stroke-width="4"/>
+  <g transform="translate(62.5, 177.5) scale(2.75)">
+    <polygon points="50,8 88,28 88,72 50,92 12,72 12,28" fill="#2dd4bf"/>
+    <g stroke="#0f1419" stroke-width="2.5" stroke-linecap="round">
+      <line x1="50" y1="30" x2="72" y2="68"/>
+      <line x1="50" y1="30" x2="28" y2="68"/>
+      <line x1="28" y1="68" x2="72" y2="68"/>
+    </g>
+    <circle cx="50" cy="30" r="7" fill="#f59e0b" stroke="#0f1419" stroke-width="2.5"/>
+    <circle cx="72" cy="68" r="6" fill="#0f1419"/>
+    <circle cx="28" cy="68" r="6" fill="#0f1419"/>
+  </g>
   <text x="400" y="290" font-family="Inter, system-ui, sans-serif"
         font-size="80" font-weight="900" letter-spacing="-3"
         fill="#e6e8eb">LAN Lab</text>
