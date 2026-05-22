@@ -35,79 +35,80 @@
     <header class="page-header container">
       <p class="kicker">What We Work On</p>
       <h1>Research</h1>
-      <p class="intro">LAN Lab — Learning and Automation for Networks — studies how
+      <p class="intro">LAN Lab (Learning and Automation for Networks) studies how
         learning systems can make next-generation networks more autonomous, robust,
         and efficient. Our work sits at the intersection of causal inference,
         reinforcement learning, and game theory, applied to the design and control
         of 6G, O-RAN, and optical access networks. A common thread runs through all
         of it: we want decision-making systems that don't just fit patterns in data
-        but reason about cause and effect — so they generalize when conditions
-        shift, stay interpretable, and come with guarantees wherever possible.</p>
+        but reason about cause and effect, so they generalize when conditions shift,
+        stay interpretable, and come with guarantees wherever possible.</p>
     </header>
 
     <div class="container">
       <section class="research-thrust" id="causal-ai">
         <h2 class="section-title">Causal AI for Networks</h2>
         <div class="prose">
-          <p>Modern networks are saturated with confounding: traffic, interference,
+          <p>Modern networks are saturated with confounding. Traffic, interference,
             user behaviour, and control actions all influence one another, and a
             policy trained to exploit correlations often fails the moment conditions
-            change. We build decision-making systems on explicit causal models —
-            structural causal models, counterfactual reasoning, and causal credit
-            assignment — so that what a system learns reflects the underlying
+            change. We build decision-making systems on explicit causal models,
+            using structural causal models, counterfactual reasoning, and causal
+            credit assignment so that what a system learns reflects the underlying
             mechanism rather than a spurious association. This makes policies more
             robust to distribution shift, more sample-efficient, and easier to
             interpret and audit.</p>
         </div>
         <p class="directions-label">Representative directions</p>
         <ul class="directions-list">
-          <li>counterfactual advantage estimation for reinforcement learning</li>
-          <li>causal world models that stay reliable out-of-distribution</li>
-          <li>causal bandits with cross-unit network interference</li>
-          <li>causal credit assignment in multi-agent systems</li>
+          <li>causal and counterfactual methods for sequential decision-making</li>
+          <li>structural causal models as a basis for network control</li>
+          <li>robustness of learned policies and models under changing conditions</li>
+          <li>causal perspectives on credit assignment and attribution</li>
         </ul>
       </section>
 
       <section class="research-thrust" id="rl-control">
         <h2 class="section-title">Reinforcement Learning &amp; Control</h2>
         <div class="prose">
-          <p>Many network problems — scheduling, resource allocation, RAN control —
-            are sequential decision problems under uncertainty, and reinforcement
-            learning is a natural fit. But off-the-shelf RL is sample-hungry and
-            offers few guarantees, a poor match for systems with hard delay budgets
-            and little tolerance for exploration. We develop RL methods tailored to
-            these constraints: federated and multi-agent formulations for
-            distributed network control, counterfactual baselines that lower
-            variance and sharpen credit assignment, and approaches informed by
-            network calculus so that delay and backlog bounds remain provable.</p>
+          <p>Many network problems, such as scheduling, resource allocation, and RAN
+            control, are sequential decision problems under uncertainty, and
+            reinforcement learning is a natural fit. Off-the-shelf RL, however, is
+            sample-hungry and offers few guarantees, which is a poor match for
+            systems with hard delay budgets and little tolerance for exploration. We
+            develop RL methods tailored to these constraints: federated and
+            multi-agent formulations for distributed network control,
+            variance-reduction techniques that make credit assignment more reliable,
+            and approaches informed by network calculus so that delay and backlog
+            bounds remain provable.</p>
         </div>
         <p class="directions-label">Representative directions</p>
         <ul class="directions-list">
-          <li>causality-driven scheduling policies for diverse delay constraints</li>
-          <li>federated and counterfactual multi-agent RL</li>
-          <li>learning-based control of O-RAN through RIC xApps and rApps</li>
-          <li>variance reduction via counterfactual baselines</li>
+          <li>reinforcement learning for scheduling and resource allocation under delay constraints</li>
+          <li>federated and multi-agent reinforcement learning for distributed control</li>
+          <li>learning-based control for Open RAN</li>
+          <li>RL methods informed by network calculus for provable performance guarantees</li>
         </ul>
       </section>
 
       <section class="research-thrust" id="game-theory">
         <h2 class="section-title">Game Theory &amp; Mechanism Design</h2>
         <div class="prose">
-          <p>Next-generation networks are shared by many self-interested parties —
-            operators, tenants, slices, users — each optimizing for itself. Treating
-            them as a single controllable system is unrealistic; instead we design
-            the rules of interaction so that good system-wide outcomes emerge from
-            strategic behaviour. Drawing on mechanism design and algorithmic game
-            theory, we build incentive-compatible mechanisms for allocating network
-            resources, with an emphasis on truthfulness, efficiency, and fairness in
-            multi-tenant settings.</p>
+          <p>Next-generation networks are shared by many self-interested parties,
+            including operators, tenants, slices, and users, each optimizing for
+            itself. Treating them as a single controllable system is unrealistic;
+            instead, we design the rules of interaction so that good system-wide
+            outcomes emerge from strategic behaviour. Drawing on mechanism design
+            and algorithmic game theory, we build incentive-compatible mechanisms
+            for allocating network resources, with an emphasis on truthfulness,
+            efficiency, and fairness in multi-tenant settings.</p>
         </div>
         <p class="directions-label">Representative directions</p>
         <ul class="directions-list">
-          <li>truthful mechanism design for network slicing</li>
+          <li>mechanism design for allocating network resources</li>
           <li>auction-based spectrum and resource allocation</li>
-          <li>incentive design in multi-agent learning</li>
-          <li>pricing and intermediation in multi-operator networks</li>
+          <li>incentive-compatible and truthful protocols for multi-tenant networks</li>
+          <li>the interplay of incentives and learning in multi-agent systems</li>
         </ul>
       </section>
 
@@ -116,18 +117,18 @@
         <div class="prose">
           <p>Underlying every learning method we build is a real networking
             substrate. We work on the architecture and performance of 6G access and
-            backhaul — Open RAN and its intelligent controllers, optical access
-            networks, and the delivery of demanding immersive applications. This
-            thrust grounds the lab's algorithmic work in concrete systems: it is
-            where models meet measured latency, dynamic bandwidth allocation, and
+            backhaul, including Open RAN and its intelligent controllers, optical
+            access networks, and the delivery of demanding immersive applications.
+            This thrust grounds the lab's algorithmic work in concrete systems. It
+            is where models meet measured latency, dynamic bandwidth allocation, and
             standardized interfaces.</p>
         </div>
         <p class="directions-label">Representative directions</p>
         <ul class="directions-list">
-          <li>application-aware MAC scheduling for XR over EPON-based 6G backhaul</li>
-          <li>intelligent O-RAN control via the Non-RT and Near-RT RIC</li>
-          <li>semantic and QoS-aware network slicing</li>
-          <li>delay-constrained transport, including TCP for latency-sensitive applications</li>
+          <li>application-aware MAC scheduling for immersive media over optical access and 6G backhaul</li>
+          <li>intelligent control of Open RAN via the Non-RT and Near-RT RIC</li>
+          <li>QoS-aware network slicing</li>
+          <li>delay-constrained transport for latency-sensitive applications</li>
         </ul>
       </section>
 
