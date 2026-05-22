@@ -543,3 +543,35 @@ a.chip:hover {
   font-size: 0.78rem;
   color: var(--muted);
 }
+
+/* Research thrusts — research.html */
+.research-thrust {
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 84px;     /* clear the sticky nav on anchor jumps */
+}
+
+.directions-label {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.directions-list {
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.directions-list li {
+  margin-bottom: 0.35rem;
+}
+
+.research-closing {
+  padding: 1.75rem 0 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
