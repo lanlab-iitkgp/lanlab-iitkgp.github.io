@@ -281,3 +281,80 @@
   color: var(--text);
   font-weight: 600;
 }
+
+/* Profile page header — dibbendu-roy.html */
+.profile-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 0 1rem;
+}
+
+.profile-header img {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.profile-header .profile-title {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-top: 0.5rem;
+  max-width: 460px;
+}
+
+.profile-header .profile-one-liner {
+  color: var(--accent);
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+}
+
+/* Readable prose blocks */
+.prose p {
+  color: var(--muted);
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.prose strong {
+  color: var(--text);
+}
+
+.prose ul {
+  color: var(--muted);
+  max-width: 760px;
+  padding-left: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.4rem;
+}
+
+/* Solid call-to-action link */
+.button-link {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+}
+
+.button-link:hover {
+  background: var(--accent-2);
+  text-decoration: none;
+}

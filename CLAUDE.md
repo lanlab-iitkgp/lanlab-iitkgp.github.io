@@ -57,7 +57,7 @@ Known bugs in current site:
 │   ├── publications.html   # split out from index.html
 │   ├── teaching.html
 │   ├── openings.html       # renamed from positions.html
-│   └── pi.html             # Dibbendu's personal bio
+│   └── dibbendu-roy.html   # Dibbendu's personal bio
 ├── assets/
 │   ├── css/
 │   │   ├── main.css        # tokens, layout, nav, hero
@@ -106,7 +106,7 @@ Home (`index.html`) sections, top to bottom:
 
 - **Affiliation everywhere**: IIT Kharagpur, GSSST. Not IIT Indore. Historical
   mentions like "previously at IIT Indore" are fine where contextually correct.
-- **PI bio is in `pages/pi.html`** — not on the home page.
+- **PI bio is in `pages/dibbendu-roy.html`** — not on the home page.
 - **Publications**: group by area (as in current index.html), bold the PI's
   name in author lists, always link DOI / arXiv when available.
 - **Collaborators to credit**: Prof. James Gross (KTH), Prof. Goutam Das (IIT
