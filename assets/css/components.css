@@ -118,7 +118,9 @@
 
 /* Interior page header */
 .page-header {
-  padding: 3rem 0 1rem;
+  /* longhand so .container's horizontal padding is preserved when used together */
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 .page-header h1 {
@@ -145,7 +147,9 @@
 
 /* Interior page sections */
 .page-section {
-  padding: 1.5rem 0;
+  /* longhand so .container's horizontal padding is preserved when used together */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .section-title {
@@ -297,7 +301,9 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 3rem 0 1rem;
+  /* longhand so .container's horizontal padding is preserved when used together */
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 .profile-header img {
