@@ -29,9 +29,23 @@
   z-index: 0;
 }
 
-/* Light theme — deeper, lower-opacity teal so the glow doesn't blow out the page */
+/* Light theme — slightly stronger teal so the glow registers against off-white */
 :root[data-theme="light"] .hero::before {
-  background: radial-gradient(ellipse at 28% 42%, rgba(13, 148, 136, 0.10), transparent 62%);
+  background: radial-gradient(ellipse at 28% 42%, rgba(20, 184, 166, 0.16), transparent 62%);
+}
+
+/* Light theme — soft card shadows so cards have visual weight on the off-white bg */
+:root[data-theme="light"] .thrust-card,
+:root[data-theme="light"] .member-card,
+:root[data-theme="light"] .project-card,
+:root[data-theme="light"] .lab-lead,
+:root[data-theme="light"] .contact-card {
+  box-shadow: 0 1px 3px rgba(15, 20, 25, 0.04), 0 4px 14px rgba(15, 20, 25, 0.04);
+}
+
+:root[data-theme="light"] .thrust-card:hover {
+  /* keep the lift effect but with a softer light-theme shadow */
+  box-shadow: 0 4px 8px rgba(15, 20, 25, 0.06), 0 12px 28px rgba(15, 20, 25, 0.08);
 }
 
 /* Keep hero content above the glow and the canvas */

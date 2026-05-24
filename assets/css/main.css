@@ -16,14 +16,22 @@
 
 /* Light theme — toggled by setting <html data-theme="light"> */
 :root[data-theme="light"] {
-  --bg: #f7f8fa;
+  --bg: #fafaf7;          /* subtly warmer than pure off-white */
   --surface: #ffffff;
-  --text: #0f1419;
+  --text: #1a1f24;        /* slightly softened from near-black */
   --muted: #5c6573;
-  --accent: #0d9488;     /* deeper teal for contrast on white */
-  --accent-2: #b45309;   /* deeper amber */
-  --border: #e3e6ea;
-  --nav-bg: rgba(247, 248, 250, 0.85);
+  --accent: #14b8a6;      /* vibrant teal — alive on white, still readable */
+  --accent-2: #d97706;    /* warm amber */
+  --border: #e2e5e9;
+  --nav-bg: rgba(250, 250, 247, 0.85);
+}
+
+/* Soft tinted backdrop for the light theme so the page isn't a flat sheet */
+:root[data-theme="light"] body {
+  background:
+    radial-gradient(ellipse at 18% 6%, rgba(20, 184, 166, 0.05), transparent 42%),
+    radial-gradient(ellipse at 86% 30%, rgba(217, 119, 6, 0.04), transparent 42%),
+    var(--bg);
 }
 
 *,
