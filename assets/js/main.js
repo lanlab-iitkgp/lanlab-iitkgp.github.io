@@ -12,8 +12,18 @@
   const NODE_SPEED = 0.2;            // max drift speed, px per frame
   const CONNECTION_DISTANCE = 130;   // px: nodes closer than this get an edge
   const EDGE_OPACITY = 0.5;          // edge opacity at its strongest (nodes touching)
-  const NODE_COLOR = '#2dd4bf';      // teal
-  const EDGE_COLOR = '#2dd4bf';      // teal
+  // Node/edge colour follows the current theme's --accent, so the
+  // constellation recolours when light/dark toggles.
+  let NODE_COLOR = readAccent();
+  let EDGE_COLOR = NODE_COLOR;
+  function readAccent() {
+    return getComputedStyle(document.documentElement)
+             .getPropertyValue('--accent').trim() || '#2dd4bf';
+  }
+  window.addEventListener('themechange', function () {
+    NODE_COLOR = readAccent();
+    EDGE_COLOR = NODE_COLOR;
+  });
   // ────────────────────────────────────────────────────────────────────
 
   const canvas = document.getElementById('hero-canvas');

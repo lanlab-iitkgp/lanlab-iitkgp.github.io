@@ -29,6 +29,11 @@
   z-index: 0;
 }
 
+/* Light theme — deeper, lower-opacity teal so the glow doesn't blow out the page */
+:root[data-theme="light"] .hero::before {
+  background: radial-gradient(ellipse at 28% 42%, rgba(13, 148, 136, 0.10), transparent 62%);
+}
+
 /* Keep hero content above the glow and the canvas */
 .hero > * {
   position: relative;
@@ -216,7 +221,7 @@
   height: 120px;
   border-radius: 6px;
   object-fit: cover;
-  background: var(--bg);
+  background: transparent;
   flex-shrink: 0;
 }
 

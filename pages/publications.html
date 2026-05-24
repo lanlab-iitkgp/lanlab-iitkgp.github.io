@@ -6,9 +6,22 @@
   <title>Publications — LAN Lab, IIT Kharagpur</title>
   <meta name="description" content="Publications from the LAN Lab — journal, conference, and preprint research on causal AI, reinforcement learning, and 6G networks.">
   <meta name="theme-color" content="#0f1419">
+  <script>
+    (function () {
+      try {
+        var s = localStorage.getItem('lanlab-theme');
+        var t = (s === 'light' || s === 'dark') ? s
+              : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', t);
+        document.documentElement.style.colorScheme = t;
+        var m = document.querySelector('meta[name="theme-color"]');
+        if (m) m.setAttribute('content', t === 'light' ? '#f7f8fa' : '#0f1419');
+      } catch (e) {}
+    })();
+  </script>
   <link rel="icon" type="image/svg+xml" href="../assets/svg/favicon.svg">
-  <link rel="stylesheet" href="../assets/css/main.css?v=12">
-  <link rel="stylesheet" href="../assets/css/components.css?v=12">
+  <link rel="stylesheet" href="../assets/css/main.css?v=13">
+  <link rel="stylesheet" href="../assets/css/components.css?v=13">
 </head>
 <body>
   <nav class="site-nav">
@@ -29,6 +42,15 @@
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="openings.html">Openings</a></li>
       </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
     </div>
   </nav>
   <main>
@@ -55,6 +77,7 @@
       </p>
     </div>
   </footer>
+  <script src="../assets/js/theme.js" defer></script>
   <script src="../assets/js/publications.js" defer></script>
 </body>
 </html>

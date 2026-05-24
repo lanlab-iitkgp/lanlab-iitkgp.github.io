@@ -11,6 +11,19 @@
   --accent: #2dd4bf;    /* teal — links, primary accents */
   --accent-2: #f59e0b;  /* amber — highlights, CTAs */
   --border: #2a323c;
+  --nav-bg: rgba(15, 20, 25, 0.85);
+}
+
+/* Light theme — toggled by setting <html data-theme="light"> */
+:root[data-theme="light"] {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #0f1419;
+  --muted: #5c6573;
+  --accent: #0d9488;     /* deeper teal for contrast on white */
+  --accent-2: #b45309;   /* deeper amber */
+  --border: #e3e6ea;
+  --nav-bg: rgba(247, 248, 250, 0.85);
 }
 
 *,
@@ -52,7 +65,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(15, 20, 25, 0.85);
+  background: var(--nav-bg);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
@@ -66,7 +79,7 @@ a:hover {
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 .site-nav .brand {
@@ -74,6 +87,8 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   font-weight: 700;
+  /* push everything else to the right end of the nav */
+  margin-right: auto;
 }
 
 .site-nav .brand img {
@@ -155,6 +170,40 @@ a:hover {
     display: flex;
   }
 }
+
+/* Theme toggle button — sun on dark theme, moon on light */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.theme-toggle .icon-moon { display: none; }
+.theme-toggle .icon-sun { display: block; }
+
+:root[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
 
 /* Site footer — shared across pages */
 .site-footer {
