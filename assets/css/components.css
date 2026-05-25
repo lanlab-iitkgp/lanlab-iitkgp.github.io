@@ -128,7 +128,7 @@
 }
 
 /* Transitional notice */
-.construction-note {
+.legacy-note {
   color: var(--muted);
   font-size: 0.85rem;
   text-align: center;

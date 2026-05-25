@@ -22,12 +22,22 @@
     return node;
   }
 
-  // Format an ISO yyyy-mm-dd string without timezone surprises.
+  // Format an ISO date string without timezone surprises.
+  // Accepts yyyy-mm-dd ("18 May 2026"), yyyy-mm ("May 2026"), or yyyy ("2026"),
+  // falling back to the raw string if nothing matches.
   function formatDate(iso) {
-    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
-    if (!m) return iso || '';
-    const month = MONTHS[parseInt(m[2], 10) - 1] || m[2];
-    return parseInt(m[3], 10) + ' ' + month + ' ' + m[1];
+    const s = iso || '';
+    let m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
+    if (m) {
+      const month = MONTHS[parseInt(m[2], 10) - 1] || m[2];
+      return parseInt(m[3], 10) + ' ' + month + ' ' + m[1];
+    }
+    m = /^(\d{4})-(\d{2})$/.exec(s);
+    if (m) {
+      const month = MONTHS[parseInt(m[2], 10) - 1] || m[2];
+      return month + ' ' + m[1];
+    }
+    return s;
   }
 
   function status(message) {
