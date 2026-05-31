@@ -62,7 +62,7 @@
         intersection of causal inference, reinforcement learning, and game theory,
         applied to the design and control of 6G, O-RAN, and optical access networks.
         A common thread: we want decision-making systems that reason about cause
-        and effect, not just correlations &mdash; so policies generalise under shift,
+        and effect, not just correlations, so that policies generalise under shift,
         stay interpretable, and come with guarantees where possible.</p>
     </header>
 
@@ -70,12 +70,12 @@
       <section class="research-thrust" id="causal-ai">
         <h2 class="section-title">Causal AI for Networks</h2>
         <div class="prose">
-          <p>Modern networks are saturated with confounding &mdash; traffic, interference,
+          <p>Modern networks are saturated with confounding: traffic, interference,
             user behaviour, and control actions all influence one another, and a
             policy trained on correlations often fails the moment conditions change.
-            We build decision-making systems on explicit causal models &mdash; structural
-            causal models, counterfactual reasoning, and causal credit assignment
-            &mdash; so that what a system learns reflects the underlying mechanism. The
+            We build decision-making systems on explicit causal models (structural
+            causal models, counterfactual reasoning, and causal credit assignment),
+            so that what a system learns reflects the underlying mechanism. The
             result is policies that are more robust to distribution shift, more
             sample-efficient, and easier to interpret.</p>
         </div>
@@ -91,12 +91,12 @@
       <section class="research-thrust" id="rl-control">
         <h2 class="section-title">Reinforcement Learning &amp; Control</h2>
         <div class="prose">
-          <p>Many network problems &mdash; scheduling, resource allocation, RAN control
-            &mdash; are sequential decision problems under uncertainty, where reinforcement
+          <p>Many network problems (scheduling, resource allocation, RAN control) are
+            sequential decision problems under uncertainty, where reinforcement
             learning is a natural fit. Off-the-shelf RL, though, is sample-hungry
             and offers few guarantees: a poor match for systems with hard delay
             budgets and little tolerance for exploration. We develop RL methods
-            tailored to these constraints &mdash; federated and multi-agent formulations
+            tailored to these constraints: federated and multi-agent formulations
             for distributed control, variance-reduction techniques for more reliable
             credit assignment, and approaches informed by network calculus so that
             delay and backlog bounds remain provable.</p>
@@ -114,7 +114,7 @@
         <h2 class="section-title">Game Theory &amp; Mechanism Design</h2>
         <div class="prose">
           <p>Next-generation networks are shared by many self-interested parties
-            &mdash; operators, tenants, slices, users &mdash; each optimising for itself.
+            (operators, tenants, slices, users), each optimising for itself.
             Treating them as a single controllable system is unrealistic; instead,
             we design the rules of interaction so that good system-wide outcomes
             emerge from strategic behaviour. Drawing on mechanism design and
@@ -136,7 +136,7 @@
         <div class="prose">
           <p>Underlying every learning method we build is a real networking
             substrate. We work on the architecture and performance of 6G access
-            and backhaul &mdash; Open RAN and its intelligent controllers, optical
+            and backhaul, including Open RAN and its intelligent controllers, optical
             access networks, and the delivery of demanding immersive applications.
             This thrust grounds the lab's algorithmic work in concrete systems,
             where models meet measured latency, dynamic bandwidth allocation, and
