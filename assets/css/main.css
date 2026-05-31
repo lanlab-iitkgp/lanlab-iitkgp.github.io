@@ -234,3 +234,100 @@ a:hover {
   margin: 0 0.4rem;
   color: var(--border);
 }
+
+/* Rich multi-column footer — opt-in via .site-footer--rich.
+   Other pages keep the single-line .footer-contact layout above. */
+.site-footer--rich {
+  padding: 0;
+  margin-top: 3rem;
+}
+.site-footer--rich > .container {
+  padding-top: 1.6rem;
+  padding-bottom: 1.1rem;
+  text-align: left;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.3fr;
+  gap: 1rem 2rem;
+  align-items: start;
+}
+.footer-col .footer-heading {
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 0.45rem 0;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+.footer-logo {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.footer-lab-name {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  margin: 0;
+}
+.footer-lab-tagline {
+  color: var(--muted);
+  font-size: 0.76rem;
+  margin: 0.1rem 0 0;
+}
+.footer-address {
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  margin: 0;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  padding: 0.1rem 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.footer-links li.is-current {
+  display: none;
+}
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.footer-links a:hover {
+  color: var(--accent);
+}
+.site-footer--rich .footer-copyright {
+  border-top: 1px solid var(--border);
+  padding: 0.65rem 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.site-footer--rich .footer-copyright .container {
+  text-align: center;
+}
+@media (max-width: 820px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 1.5rem;
+  }
+}
+@media (max-width: 520px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
