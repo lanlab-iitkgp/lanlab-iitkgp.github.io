@@ -377,6 +377,58 @@
   margin-bottom: 0.4rem;
 }
 
+.prose ol {
+  color: var(--muted);
+  max-width: 760px;
+  padding-left: 1.25rem;
+}
+
+/* Small uppercase accent label used inside .prose for sub-section headings
+   like "Key facts", "Eligibility", "How to apply". */
+.subhead {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Two-column term/value grid for compact "key facts" blocks. */
+.key-facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1.25rem;
+  margin: 0 0 1.25rem;
+  max-width: 760px;
+  font-size: 0.92rem;
+}
+.key-facts dt {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-top: 0.15rem;
+}
+.key-facts dd {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+@media (max-width: 520px) {
+  .key-facts {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .key-facts dt {
+    margin-top: 0.7rem;
+  }
+  .key-facts dt:first-child {
+    margin-top: 0;
+  }
+}
+
 /* Solid call-to-action link */
 .button-link {
   display: inline-block;
