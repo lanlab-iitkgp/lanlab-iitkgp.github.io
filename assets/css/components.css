@@ -445,6 +445,14 @@
   text-decoration: none;
 }
 
+/* Row of CTA buttons, used when a section has more than one external link. */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
 /* Section subtitle */
 .section-sub {
   color: var(--muted);
