@@ -87,6 +87,13 @@
   margin-top: 1rem;
 }
 
+/* Homepage thrusts heading — matches the news-section h2 scale */
+.thrusts-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.25rem;
+}
+
 /* Research-thrust cards */
 .thrusts {
   display: grid;
