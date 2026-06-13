@@ -1,7 +1,8 @@
 /* LAN Lab — main stylesheet
-   Design tokens and base styles. See CLAUDE.md > Design system. */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+   Design tokens and base styles. See CLAUDE.md > Design system.
+   Fonts are loaded via <link> tags in each page's <head> (preconnect +
+   stylesheet) rather than an @import here, so the font CSS downloads in
+   parallel with this file instead of after it. */
 
 :root {
   --bg: #0f1419;        /* page background */
@@ -68,6 +69,43 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Keyboard focus — visible ring on links, buttons, and the nav toggle */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Anchor jumps (e.g. research.html#causal-ai) clear the sticky nav */
+section[id],
+h2[id] {
+  scroll-margin-top: 84px;
+}
+
+/* Skip link — hidden until focused, for keyboard and screen-reader users */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 100;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+  text-decoration: none;
 }
 
 /* Sticky site navigation */

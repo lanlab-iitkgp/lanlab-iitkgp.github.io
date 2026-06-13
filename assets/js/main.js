@@ -26,6 +26,9 @@
   });
   // ────────────────────────────────────────────────────────────────────
 
+  const POINTER_DISTANCE = 170;      // px: nodes nearer the cursor than this link to it
+  const POINTER_EDGE_OPACITY = 0.55; // strongest opacity of a cursor-to-node edge
+
   const canvas = document.getElementById('hero-canvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
@@ -38,6 +41,8 @@
   let height = 0;
   let rafId = null;
   let running = false;
+  // Cursor position in canvas space; null when the pointer is outside the hero.
+  const pointer = { x: null, y: null };
 
   // Match the canvas backing store to its CSS size and device pixel ratio.
   function resize() {
@@ -96,6 +101,23 @@
       }
     }
 
+    // Cursor edges — link nearby nodes to the pointer so the field reacts to
+    // the visitor. Skipped entirely when the pointer is outside the hero.
+    if (pointer.x !== null) {
+      ctx.strokeStyle = EDGE_COLOR;
+      for (const n of nodes) {
+        const dx = n.x - pointer.x;
+        const dy = n.y - pointer.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist >= POINTER_DISTANCE) continue;
+        ctx.globalAlpha = POINTER_EDGE_OPACITY * (1 - dist / POINTER_DISTANCE);
+        ctx.beginPath();
+        ctx.moveTo(pointer.x, pointer.y);
+        ctx.lineTo(n.x, n.y);
+        ctx.stroke();
+      }
+    }
+
     // Nodes.
     ctx.globalAlpha = 1;
     ctx.fillStyle = NODE_COLOR;
@@ -147,6 +169,23 @@
       init();
     }, 150);
   });
+
+  // Pointer interactivity — link nearby nodes to the cursor as it moves over
+  // the hero. Desktop delight only; under reduced-motion no loop runs to redraw.
+  if (!reduceMotion) {
+    const heroEl = document.querySelector('.hero');
+    if (heroEl) {
+      heroEl.addEventListener('mousemove', function (e) {
+        const rect = canvas.getBoundingClientRect();
+        pointer.x = e.clientX - rect.left;
+        pointer.y = e.clientY - rect.top;
+      });
+      heroEl.addEventListener('mouseleave', function () {
+        pointer.x = null;
+        pointer.y = null;
+      });
+    }
+  }
 
   // Pause the animation while the hero is scrolled out of view.
   const hero = document.querySelector('.hero');

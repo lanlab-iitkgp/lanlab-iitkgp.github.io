@@ -87,6 +87,14 @@
   margin-top: 1rem;
 }
 
+/* Hero call-to-action row */
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
 /* Homepage thrusts heading — matches the news-section h2 scale */
 .thrusts-heading {
   font-size: 1.5rem;
@@ -235,6 +243,11 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.member-card:hover {
+  border-color: var(--accent);
 }
 
 .member-card img {
@@ -276,6 +289,11 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
 }
 
 .project-card h3 {
@@ -450,6 +468,101 @@
 .button-link:hover {
   background: var(--accent-2);
   text-decoration: none;
+}
+
+/* Ghost variant — outlined, for secondary actions (e.g. hero) */
+.button-link--ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.button-link--ghost:hover {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  color: var(--accent);
+}
+
+/* Homepage collaborators & partners strip — text badges, no third-party logos */
+.collab-section {
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.collab-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.collab-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.collab-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.collab-list li:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.collab-name {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.collab-org {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+/* Homepage call-to-action band — drives toward Openings */
+.cta-band {
+  margin-top: 2.5rem;
+  background:
+    linear-gradient(135deg,
+      color-mix(in srgb, var(--accent) 14%, var(--surface)),
+      var(--surface));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 2.25rem 0;
+}
+
+.cta-band-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.cta-band h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.cta-band p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 560px;
+}
+
+.cta-band .button-link {
+  flex-shrink: 0;
 }
 
 /* Row of CTA buttons, used when a section has more than one external link. */
@@ -674,6 +787,57 @@ a.chip:hover {
   color: var(--muted);
   font-size: 0.85rem;
   margin-top: 0.6rem;
+}
+
+/* Publications summary stat band */
+.pub-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 0 0 2rem;
+}
+
+.pub-stat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  text-align: center;
+}
+
+.pub-stat-num {
+  display: block;
+  color: var(--accent);
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.pub-stat-label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+/* Preprint / type badge on a publication entry */
+.pub-type-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent-2);
+  color: var(--accent-2);
+  background: color-mix(in srgb, var(--accent-2) 10%, transparent);
 }
 
 .pub-status {
