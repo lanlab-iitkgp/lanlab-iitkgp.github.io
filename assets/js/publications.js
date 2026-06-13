@@ -65,30 +65,6 @@
     return entry;
   }
 
-  function renderStats(works) {
-    const years = works.map(function (w) { return w.year; }).filter(Boolean);
-    const citations = works.reduce(function (sum, w) {
-      return sum + (w.cited_by_count || 0);
-    }, 0);
-    const stats = [
-      { num: String(works.length), label: 'Publications' },
-      { num: String(citations), label: 'Citations' },
-    ];
-    if (years.length) {
-      const min = Math.min.apply(null, years);
-      const max = Math.max.apply(null, years);
-      stats.push({ num: min === max ? String(max) : min + '–' + max, label: 'Years active' });
-    }
-    const wrap = el('div', 'pub-stats');
-    stats.forEach(function (s) {
-      const card = el('div', 'pub-stat');
-      card.appendChild(el('span', 'pub-stat-num', s.num));
-      card.appendChild(el('span', 'pub-stat-label', s.label));
-      wrap.appendChild(card);
-    });
-    return wrap;
-  }
-
   function render(data) {
     const works = data.works || [];
     container.textContent = '';
@@ -97,8 +73,6 @@
       container.appendChild(el('p', 'pub-status', 'No publications found.'));
       return;
     }
-
-    container.appendChild(renderStats(works));
 
     // group by year — works arrive newest-first, so groups stay ordered
     const groups = [];

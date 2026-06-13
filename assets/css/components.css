@@ -829,41 +829,6 @@ a.chip:hover {
   margin-top: 0.6rem;
 }
 
-/* Publications summary stat band */
-.pub-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  margin: 0 0 2rem;
-}
-
-.pub-stat {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.1rem 1.25rem;
-  text-align: center;
-}
-
-.pub-stat-num {
-  display: block;
-  color: var(--accent);
-  font-size: 1.9rem;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-
-.pub-stat-label {
-  display: block;
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-top: 0.3rem;
-}
-
 /* Preprint / type badge on a publication entry */
 .pub-type-badge {
   display: inline-block;
