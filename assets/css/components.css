@@ -377,6 +377,45 @@
   margin-top: 0.75rem;
 }
 
+/* Academic / professional presence — icon-button bar (pages/dibbendu-roy.html).
+   Generic line icons in the site idiom; the text label carries the brand. */
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.profile-link svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.profile-link:hover,
+.profile-link:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+  text-decoration: none;
+}
+
 /* Readable prose blocks */
 .prose p {
   color: var(--muted);
