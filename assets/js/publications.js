@@ -42,7 +42,12 @@
 
   function renderEntry(work) {
     const entry = el('article', 'pub-entry');
-    entry.appendChild(el('div', 'pub-title', work.title));
+    const title = el('div', 'pub-title', work.title);
+    // Flag preprints so visitors can tell them apart from published papers.
+    if (work.type === 'preprint') {
+      title.appendChild(el('span', 'pub-type-badge', 'Preprint'));
+    }
+    entry.appendChild(title);
     if ((work.authors || []).length) {
       entry.appendChild(renderAuthors(work));
     }

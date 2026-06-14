@@ -18,7 +18,7 @@
     // Keep the address-bar / status-bar colour in sync.
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) {
-      meta.setAttribute('content', theme === 'light' ? '#f7f8fa' : '#0f1419');
+      meta.setAttribute('content', theme === 'light' ? '#fafaf7' : '#0f1419');
     }
     // Update the toggle button's aria label so screen readers describe the
     // *action* (what clicking will do) rather than the current state.

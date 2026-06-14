@@ -6,7 +6,7 @@
   'use strict';
 
   const DATA_URL = 'assets/data/news.json';
-  const MAX_ITEMS = 6;
+  const MAX_ITEMS = 4;
   const MONTHS = [
     'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'

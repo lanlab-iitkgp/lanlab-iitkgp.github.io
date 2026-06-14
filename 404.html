@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found — LAN Lab, IIT Kharagpur</title>
+  <meta name="description" content="The page you were looking for could not be found at the LAN Lab website.">
+  <meta name="theme-color" content="#0f1419">
+  <meta name="robots" content="noindex">
+  <script>
+    /* Set the theme synchronously to avoid a flash on light-theme load. */
+    (function () {
+      try {
+        var s = localStorage.getItem('lanlab-theme');
+        var t = (s === 'light' || s === 'dark') ? s
+              : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', t);
+        document.documentElement.style.colorScheme = t;
+        var m = document.querySelector('meta[name="theme-color"]');
+        if (m) m.setAttribute('content', t === 'light' ? '#fafaf7' : '#0f1419');
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="/assets/svg/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css?v=22">
+  <link rel="stylesheet" href="/assets/css/components.css?v=19">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="site-nav">
+    <div class="container">
+      <div class="brand">
+        <img src="/assets/svg/logo.svg" alt="LAN Lab">
+        <span>LAN Lab</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/people.html">People</a></li>
+        <li><a href="/pages/research.html">Research</a></li>
+        <li><a href="/pages/publications.html">Publications</a></li>
+        <li><a href="/pages/teaching.html">Teaching</a></li>
+        <li><a href="/pages/openings.html">Openings</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <main id="main" tabindex="-1">
+    <section class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container">
+        <p class="kicker">Error 404</p>
+        <h1>This page wandered <span class="accent">off the network</span></h1>
+        <p class="tagline">The link may be broken, or the page may have moved during the
+          lab's transition from IIT Indore to IIT Kharagpur.</p>
+        <div class="hero-cta">
+          <a class="button-link" href="/index.html">Back to home</a>
+          <a class="button-link button-link--ghost" href="/pages/research.html">Browse research</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2026 LAN Lab &middot; IIT Kharagpur</small>
+    </div>
+  </footer>
+  <script src="/assets/js/theme.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
