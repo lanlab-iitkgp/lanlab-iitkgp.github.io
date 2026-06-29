@@ -1,11 +1,31 @@
 {
-  "generated": "2026-06-22T12:19:48Z",
+  "generated": "2026-06-29T11:16:57Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
-  "raw_count": 35,
-  "count": 28,
+  "raw_count": 36,
+  "count": 29,
   "works": [
+    {
+      "title": "From prediction to intervention: Causal ML for explainable TV churn mitigation",
+      "authors": [
+        "Maryam Bandali",
+        "Jaume Rius i Riu",
+        "Andreas Lewitzki",
+        "Niloofar Mehrnia",
+        "Dibbendu Roy",
+        "James Gross"
+      ],
+      "lead_author_index": 4,
+      "year": 2026,
+      "date": "2026-06-01",
+      "venue": "Machine Learning with Applications",
+      "type": "article",
+      "doi_url": "https://doi.org/10.1016/j.mlwa.2026.100938",
+      "openalex_url": "https://openalex.org/W7166309785",
+      "pdf_url": "https://doi.org/10.1016/j.mlwa.2026.100938",
+      "cited_by_count": 0
+    },
     {
       "title": "Application-aware MAC scheduling for XR over EPON-based 6G-backhaul",
       "authors": [
@@ -125,7 +145,7 @@
       "doi_url": "https://doi.org/10.1109/tnsm.2024.3509636",
       "openalex_url": "https://openalex.org/W4404914893",
       "pdf_url": null,
-      "cited_by_count": 2
+      "cited_by_count": 3
     },
     {
       "title": "Desynchronized Wake-Up Algorithm for Energy Efficient EPON-Based 5G Backhaul",
