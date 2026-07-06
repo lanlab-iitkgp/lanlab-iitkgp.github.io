@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-29T11:16:57Z",
+  "generated": "2026-07-06T10:53:08Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
@@ -18,7 +18,7 @@
       ],
       "lead_author_index": 4,
       "year": 2026,
-      "date": "2026-06-01",
+      "date": "2026-06-27",
       "venue": "Machine Learning with Applications",
       "type": "article",
       "doi_url": "https://doi.org/10.1016/j.mlwa.2026.100938",
