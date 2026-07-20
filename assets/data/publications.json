@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-13T09:40:46Z",
+  "generated": "2026-07-20T09:28:36Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
@@ -55,7 +55,7 @@
       "year": 2025,
       "date": "2025-11-26",
       "venue": null,
-      "type": "article",
+      "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/itnac66378.2025.11302588",
       "openalex_url": "https://openalex.org/W7116856369",
       "pdf_url": null,
@@ -88,7 +88,7 @@
       "year": 2025,
       "date": "2025-05-26",
       "venue": null,
-      "type": "article",
+      "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/icmlcn64995.2025.11140535",
       "openalex_url": "https://openalex.org/W4413967421",
       "pdf_url": null,
@@ -105,7 +105,7 @@
       "year": 2025,
       "date": "2025-03-06",
       "venue": null,
-      "type": "article",
+      "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/ncc63735.2025.10983517",
       "openalex_url": "https://openalex.org/W4410342813",
       "pdf_url": null,
@@ -122,7 +122,7 @@
       "year": 2025,
       "date": "2025-03-06",
       "venue": null,
-      "type": "article",
+      "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/ncc63735.2025.10983790",
       "openalex_url": "https://openalex.org/W4410341465",
       "pdf_url": null,
@@ -244,7 +244,7 @@
       "year": 2022,
       "date": "2022-09-12",
       "venue": "2022 IEEE 33rd Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
-      "type": "article",
+      "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/pimrc54779.2022.9977925",
       "openalex_url": "https://openalex.org/W4312906355",
       "pdf_url": null,
@@ -304,7 +304,7 @@
       "doi_url": "https://doi.org/10.1364/jocn.446872",
       "openalex_url": "https://openalex.org/W4220940891",
       "pdf_url": "https://arxiv.org/pdf/2109.02186",
-      "cited_by_count": 12
+      "cited_by_count": 13
     },
     {
       "title": "Queuing Analysis of QoS Aware Microwave Power Transfer Enabled CR-IoT Network",
@@ -496,7 +496,7 @@
       "year": 2018,
       "date": "2018-05-01",
       "venue": null,
-      "type": "article",
+      "type": "conference-paper",
       "doi_url": "https://doi.org/10.23919/ondm.2018.8396123",
       "openalex_url": "https://openalex.org/W2811358956",
       "pdf_url": null,
@@ -518,7 +518,7 @@
       "doi_url": "https://doi.org/10.1364/jocn.10.000260",
       "openalex_url": "https://openalex.org/W2790879866",
       "pdf_url": "https://arxiv.org/pdf/1708.09218",
-      "cited_by_count": 21
+      "cited_by_count": 22
     }
   ]
 }
