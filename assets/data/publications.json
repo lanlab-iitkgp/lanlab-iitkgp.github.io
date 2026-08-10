@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-03T09:59:07Z",
+  "generated": "2026-08-10T07:54:19Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
-  "raw_count": 36,
-  "count": 29,
+  "raw_count": 37,
+  "count": 30,
   "works": [
     {
       "title": "From prediction to intervention: Causal ML for explainable TV churn mitigation",
@@ -342,6 +342,21 @@
       "doi_url": "https://doi.org/10.48550/arxiv.2201.05187",
       "openalex_url": "https://openalex.org/W4221156981",
       "pdf_url": "https://arxiv.org/pdf/2201.05187",
+      "cited_by_count": 0
+    },
+    {
+      "title": "Architecture and Policy Design for Next-generation Access Networks",
+      "authors": [
+        "Dibbendu Roy"
+      ],
+      "lead_author_index": 0,
+      "year": 2022,
+      "date": "2022-01-01",
+      "venue": "Minerva Access (University of Melbourne)",
+      "type": "dissertation",
+      "doi_url": null,
+      "openalex_url": "https://openalex.org/W7197994275",
+      "pdf_url": null,
       "cited_by_count": 0
     },
     {
