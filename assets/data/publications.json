@@ -1,10 +1,10 @@
 {
-  "generated": "2026-08-10T07:54:19Z",
+  "generated": "2026-08-17T07:07:38Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
-  "raw_count": 37,
-  "count": 30,
+  "raw_count": 38,
+  "count": 31,
   "works": [
     {
       "title": "From prediction to intervention: Causal ML for explainable TV churn mitigation",
@@ -24,6 +24,23 @@
       "doi_url": "https://doi.org/10.1016/j.mlwa.2026.100938",
       "openalex_url": "https://openalex.org/W7166309785",
       "pdf_url": "https://doi.org/10.1016/j.mlwa.2026.100938",
+      "cited_by_count": 0
+    },
+    {
+      "title": "Exploration of XR traffic with IPACT and IPACT-GE DBAs for immersive communication",
+      "authors": [
+        "Akhilesh Patel",
+        "Yatindra Nath Singh",
+        "Dibbendu Roy"
+      ],
+      "lead_author_index": 2,
+      "year": 2026,
+      "date": "2026-03-24",
+      "venue": "Computer Networks",
+      "type": "article",
+      "doi_url": "https://doi.org/10.1016/j.comnet.2026.112248",
+      "openalex_url": "https://openalex.org/W7140220665",
+      "pdf_url": null,
       "cited_by_count": 0
     },
     {
@@ -92,7 +109,7 @@
       "doi_url": "https://doi.org/10.1109/icmlcn64995.2025.11140535",
       "openalex_url": "https://openalex.org/W4413967421",
       "pdf_url": null,
-      "cited_by_count": 1
+      "cited_by_count": 2
     },
     {
       "title": "Delay and Cycle Time Analysis for Immersive Experience Using IPACT DBA",
@@ -196,7 +213,7 @@
       "doi_url": "https://doi.org/10.1109/lnet.2023.3316390",
       "openalex_url": "https://openalex.org/W4386766852",
       "pdf_url": "https://arxiv.org/pdf/2307.08987",
-      "cited_by_count": 12
+      "cited_by_count": 13
     },
     {
       "title": "Modified Split-Rendering Architecture to Enable AI-Assisted Application-Aware MAC for XR Slice",
@@ -213,7 +230,7 @@
       "doi_url": "https://doi.org/10.1109/lnet.2023.3283701",
       "openalex_url": "https://openalex.org/W4379620530",
       "pdf_url": null,
-      "cited_by_count": 8
+      "cited_by_count": 9
     },
     {
       "title": "Coalition Formation for Outsourced Spectrum Sensing in Cognitive Radio Network",
@@ -285,7 +302,7 @@
       "doi_url": "https://doi.org/10.1109/tccn.2022.3177516",
       "openalex_url": "https://openalex.org/W4285142152",
       "pdf_url": "https://arxiv.org/pdf/2201.05184",
-      "cited_by_count": 3
+      "cited_by_count": 4
     },
     {
       "title": "Achieving QoS for bursty uRLLC applications over passive optical networks",
@@ -427,7 +444,7 @@
       "doi_url": "https://doi.org/10.1109/tgcn.2020.2994409",
       "openalex_url": "https://openalex.org/W3025060040",
       "pdf_url": null,
-      "cited_by_count": 18
+      "cited_by_count": 19
     },
     {
       "title": "Economics of Resilient TWDM PONs",
