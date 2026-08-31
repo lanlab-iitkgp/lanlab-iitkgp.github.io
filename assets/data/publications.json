@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T07:11:02Z",
+  "generated": "2026-08-31T13:24:03Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
@@ -41,7 +41,7 @@
       "doi_url": "https://doi.org/10.1016/j.comnet.2026.112248",
       "openalex_url": "https://openalex.org/W7140220665",
       "pdf_url": null,
-      "cited_by_count": 0
+      "cited_by_count": 1
     },
     {
       "title": "Application-aware MAC scheduling for XR over EPON-based 6G-backhaul",
@@ -93,7 +93,7 @@
       "doi_url": "https://doi.org/10.1016/j.yofte.2025.104332",
       "openalex_url": "https://openalex.org/W4412734531",
       "pdf_url": null,
-      "cited_by_count": 1
+      "cited_by_count": 2
     },
     {
       "title": "Causality-driven RL-based Scheduling Policies for Diverse Delay Constraints",
@@ -179,7 +179,7 @@
       "doi_url": "https://doi.org/10.1109/jlt.2024.3379316",
       "openalex_url": "https://openalex.org/W4392940223",
       "pdf_url": null,
-      "cited_by_count": 5
+      "cited_by_count": 6
     },
     {
       "title": "TCP Slice: A semi-distributed TCP algorithm for Delay-constrained Applications",
@@ -321,7 +321,7 @@
       "doi_url": "https://doi.org/10.1364/jocn.446872",
       "openalex_url": "https://openalex.org/W4220940891",
       "pdf_url": "https://arxiv.org/pdf/2109.02186",
-      "cited_by_count": 13
+      "cited_by_count": 14
     },
     {
       "title": "Queuing Analysis of QoS Aware Microwave Power Transfer Enabled CR-IoT Network",
@@ -444,7 +444,7 @@
       "doi_url": "https://doi.org/10.1109/tgcn.2020.2994409",
       "openalex_url": "https://openalex.org/W3025060040",
       "pdf_url": null,
-      "cited_by_count": 19
+      "cited_by_count": 20
     },
     {
       "title": "Economics of Resilient TWDM PONs",
