@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T13:24:03Z",
+  "generated": "2026-09-07T12:12:48Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
@@ -301,7 +301,7 @@
       "type": "article",
       "doi_url": "https://doi.org/10.1109/tccn.2022.3177516",
       "openalex_url": "https://openalex.org/W4285142152",
-      "pdf_url": "https://arxiv.org/pdf/2201.05184",
+      "pdf_url": "https://hdl.handle.net/10072/435891",
       "cited_by_count": 4
     },
     {
