@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lanlab-iitkgp.github.io/sitemap.xml
+Sitemap: https://lanlab.iitkgp.ac.in/sitemap.xml
