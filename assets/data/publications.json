@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-21T12:35:03Z",
+  "generated": "2026-09-28T13:35:01Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
-  "raw_count": 38,
+  "raw_count": 37,
   "count": 31,
   "works": [
     {
@@ -99,7 +99,7 @@
       "title": "Causality-driven RL-based Scheduling Policies for Diverse Delay Constraints",
       "authors": [
         "Dibbendu Roy",
-        "James J. Gross"
+        "James Gross"
       ],
       "lead_author_index": 0,
       "year": 2025,
@@ -292,7 +292,7 @@
         "Aravinda S. Rao",
         "Tansu Alpcan",
         "Goutam Das",
-        "Marimuthu Palaniswami"
+        "Marimuthu Swami Palaniswami"
       ],
       "lead_author_index": 0,
       "year": 2022,
@@ -311,7 +311,7 @@
         "Aravinda S. Rao",
         "Tansu Alpcan",
         "Goutam Das",
-        "Marimuthu Palaniswami"
+        "Marimuthu Swami Palaniswami"
       ],
       "lead_author_index": 0,
       "year": 2022,
@@ -349,7 +349,7 @@
         "Tansu Alpcan",
         "Akilan Wick",
         "Goutam Das",
-        "Marimuthu Palaniswami"
+        "Marimuthu Swami Palaniswami"
       ],
       "lead_author_index": 0,
       "year": 2022,
@@ -408,7 +408,7 @@
       "doi_url": "https://doi.org/10.1109/tgcn.2021.3089746",
       "openalex_url": "https://openalex.org/W3176962112",
       "pdf_url": null,
-      "cited_by_count": 7
+      "cited_by_count": 8
     },
     {
       "title": "Queuing Analysis of Opportunistic Cognitive Radio IoT Network with Imperfect Sensing",
