@@ -1,9 +1,9 @@
 {
-  "generated": "2026-09-28T13:35:01Z",
+  "generated": "2026-10-05T14:19:08Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
-  "raw_count": 37,
+  "raw_count": 35,
   "count": 31,
   "works": [
     {
@@ -121,7 +121,7 @@
       "lead_author_index": 1,
       "year": 2025,
       "date": "2025-03-06",
-      "venue": null,
+      "venue": "National Conference on Communications",
       "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/ncc63735.2025.10983517",
       "openalex_url": "https://openalex.org/W4410342813",
@@ -138,7 +138,7 @@
       "lead_author_index": 1,
       "year": 2025,
       "date": "2025-03-06",
-      "venue": null,
+      "venue": "National Conference on Communications",
       "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/ncc63735.2025.10983790",
       "openalex_url": "https://openalex.org/W4410341465",
@@ -260,7 +260,7 @@
       "lead_author_index": 1,
       "year": 2022,
       "date": "2022-09-12",
-      "venue": "2022 IEEE 33rd Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
+      "venue": "IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)",
       "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/pimrc54779.2022.9977925",
       "openalex_url": "https://openalex.org/W4312906355",
@@ -424,9 +424,9 @@
       "venue": "arXiv (Cornell University)",
       "type": "preprint",
       "doi_url": "https://doi.org/10.48550/arxiv.2103.08875",
-      "openalex_url": "https://openalex.org/W4300819297",
+      "openalex_url": "https://openalex.org/W3139284698",
       "pdf_url": "https://arxiv.org/pdf/2103.08875",
-      "cited_by_count": 1
+      "cited_by_count": 0
     },
     {
       "title": "A Cost Effective Architecture and Throughput Efficient Dynamic Bandwidth Allocation Protocol for Fog Computing Over EPON",
@@ -527,7 +527,7 @@
       "lead_author_index": 0,
       "year": 2018,
       "date": "2018-05-01",
-      "venue": null,
+      "venue": "International Conference on Optical Network Design and Modeling (ONDM)",
       "type": "conference-paper",
       "doi_url": "https://doi.org/10.23919/ondm.2018.8396123",
       "openalex_url": "https://openalex.org/W2811358956",
