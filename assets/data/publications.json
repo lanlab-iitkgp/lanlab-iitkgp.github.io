@@ -1,9 +1,9 @@
 {
-  "generated": "2026-10-05T14:19:08Z",
+  "generated": "2026-10-12T15:06:55Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
-  "raw_count": 35,
+  "raw_count": 34,
   "count": 31,
   "works": [
     {
@@ -24,7 +24,7 @@
       "doi_url": "https://doi.org/10.1016/j.mlwa.2026.100938",
       "openalex_url": "https://openalex.org/W7166309785",
       "pdf_url": "https://doi.org/10.1016/j.mlwa.2026.100938",
-      "cited_by_count": 0
+      "cited_by_count": 1
     },
     {
       "title": "Exploration of XR traffic with IPACT and IPACT-GE DBAs for immersive communication",
@@ -213,7 +213,7 @@
       "doi_url": "https://doi.org/10.1109/lnet.2023.3316390",
       "openalex_url": "https://openalex.org/W4386766852",
       "pdf_url": "https://arxiv.org/pdf/2307.08987",
-      "cited_by_count": 13
+      "cited_by_count": 15
     },
     {
       "title": "Modified Split-Rendering Architecture to Enable AI-Assisted Application-Aware MAC for XR Slice",
@@ -230,7 +230,7 @@
       "doi_url": "https://doi.org/10.1109/lnet.2023.3283701",
       "openalex_url": "https://openalex.org/W4379620530",
       "pdf_url": null,
-      "cited_by_count": 9
+      "cited_by_count": 10
     },
     {
       "title": "Coalition Formation for Outsourced Spectrum Sensing in Cognitive Radio Network",
@@ -462,7 +462,7 @@
       "doi_url": "https://doi.org/10.1109/jlt.2020.2973226",
       "openalex_url": "https://openalex.org/W3005784241",
       "pdf_url": null,
-      "cited_by_count": 2
+      "cited_by_count": 1
     },
     {
       "title": "Protocol design for energy efficient OLT transmitter in TWDM-PON guaranteeing SLA of up-stream and down-stream traffic",
