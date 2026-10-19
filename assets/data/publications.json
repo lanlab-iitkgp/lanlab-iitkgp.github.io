@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-12T15:06:55Z",
+  "generated": "2026-10-19T12:49:39Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
-  "raw_count": 34,
-  "count": 31,
+  "raw_count": 36,
+  "count": 33,
   "works": [
     {
       "title": "From prediction to intervention: Causal ML for explainable TV churn mitigation",
@@ -426,7 +426,7 @@
       "doi_url": "https://doi.org/10.48550/arxiv.2103.08875",
       "openalex_url": "https://openalex.org/W3139284698",
       "pdf_url": "https://arxiv.org/pdf/2103.08875",
-      "cited_by_count": 0
+      "cited_by_count": 1
     },
     {
       "title": "A Cost Effective Architecture and Throughput Efficient Dynamic Bandwidth Allocation Protocol for Fog Computing Over EPON",
@@ -551,6 +551,41 @@
       "openalex_url": "https://openalex.org/W2790879866",
       "pdf_url": "https://arxiv.org/pdf/1708.09218",
       "cited_by_count": 22
+    },
+    {
+      "title": "Performance of BPSK and BFSK digital modulation schemes in colored noise scenario",
+      "authors": [
+        "Bipin Kumar Patel",
+        "Dibbendu Roy",
+        "Siva Ram Krishna Vadali"
+      ],
+      "lead_author_index": 1,
+      "year": 2015,
+      "date": "2015-02-01",
+      "venue": "IEEE Underwater Technology (UT)",
+      "type": "conference-paper",
+      "doi_url": "https://doi.org/10.1109/ut.2015.7108315",
+      "openalex_url": "https://openalex.org/W1548455508",
+      "pdf_url": null,
+      "cited_by_count": 8
+    },
+    {
+      "title": "Broadside radiation synthesis of Concentric Circular Antenna Array using Improved Particle Swarm Optimization",
+      "authors": [
+        "Durbadal Mandal",
+        "Dibbendu Roy",
+        "Rajib Kar",
+        "Sakti Prasad Ghoshal"
+      ],
+      "lead_author_index": 1,
+      "year": 2011,
+      "date": "2011-12-01",
+      "venue": "IEEE Student Conference on Research and Development (SCOReD)",
+      "type": "conference-paper",
+      "doi_url": "https://doi.org/10.1109/scored.2011.6148731",
+      "openalex_url": "https://openalex.org/W2069455714",
+      "pdf_url": null,
+      "cited_by_count": 1
     }
   ]
 }
