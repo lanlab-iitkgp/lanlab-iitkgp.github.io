@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T12:49:39Z",
+  "generated": "2026-10-26T12:42:28Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
@@ -104,7 +104,7 @@
       "lead_author_index": 0,
       "year": 2025,
       "date": "2025-05-26",
-      "venue": null,
+      "venue": "IEEE International Conference on Machine Learning for Communication and Networking (ICMLCN)",
       "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/icmlcn64995.2025.11140535",
       "openalex_url": "https://openalex.org/W4413967421",
