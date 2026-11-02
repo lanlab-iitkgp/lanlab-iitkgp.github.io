@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T12:42:28Z",
+  "generated": "2026-11-02T15:28:04Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
@@ -71,7 +71,7 @@
       "lead_author_index": 1,
       "year": 2025,
       "date": "2025-11-26",
-      "venue": null,
+      "venue": "International Telecommunication Networks and Applications Conference (ITNAC)",
       "type": "conference-paper",
       "doi_url": "https://doi.org/10.1109/itnac66378.2025.11302588",
       "openalex_url": "https://openalex.org/W7116856369",
@@ -93,7 +93,7 @@
       "doi_url": "https://doi.org/10.1016/j.yofte.2025.104332",
       "openalex_url": "https://openalex.org/W4412734531",
       "pdf_url": null,
-      "cited_by_count": 2
+      "cited_by_count": 3
     },
     {
       "title": "Causality-driven RL-based Scheduling Policies for Diverse Delay Constraints",
