@@ -1,10 +1,10 @@
 {
-  "generated": "2026-11-02T15:28:04Z",
+  "generated": "2026-11-09T15:54:22Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
-  "raw_count": 36,
-  "count": 33,
+  "raw_count": 31,
+  "count": 31,
   "works": [
     {
       "title": "From prediction to intervention: Causal ML for explainable TV churn mitigation",
@@ -59,7 +59,7 @@
       "doi_url": "https://doi.org/10.1016/j.yofte.2025.104545",
       "openalex_url": "https://openalex.org/W7118070948",
       "pdf_url": null,
-      "cited_by_count": 0
+      "cited_by_count": 1
     },
     {
       "title": "Handling Real-time Slice Requests with QoS-Aware Offline Optimization and Online Adaptation",
@@ -195,7 +195,7 @@
       "doi_url": "https://doi.org/10.48550/arxiv.2312.01869",
       "openalex_url": "https://openalex.org/W4389364202",
       "pdf_url": "https://arxiv.org/pdf/2312.01869",
-      "cited_by_count": 0
+      "cited_by_count": 1
     },
     {
       "title": "AI-Assisted Improved Service Provisioning for Low-Latency XR Over 5G NR",
@@ -213,7 +213,7 @@
       "doi_url": "https://doi.org/10.1109/lnet.2023.3316390",
       "openalex_url": "https://openalex.org/W4386766852",
       "pdf_url": "https://arxiv.org/pdf/2307.08987",
-      "cited_by_count": 15
+      "cited_by_count": 17
     },
     {
       "title": "Modified Split-Rendering Architecture to Enable AI-Assisted Application-Aware MAC for XR Slice",
@@ -248,7 +248,7 @@
       "doi_url": "https://doi.org/10.1109/tccn.2023.3254512",
       "openalex_url": "https://openalex.org/W4323644215",
       "pdf_url": null,
-      "cited_by_count": 13
+      "cited_by_count": 14
     },
     {
       "title": "XR-specific C-DRX Enhancement for UE power saving in 5G NR",
@@ -301,8 +301,8 @@
       "type": "article",
       "doi_url": "https://doi.org/10.1109/tccn.2022.3177516",
       "openalex_url": "https://openalex.org/W4285142152",
-      "pdf_url": "https://hdl.handle.net/10072/435891",
-      "cited_by_count": 4
+      "pdf_url": "https://arxiv.org/pdf/2201.05184",
+      "cited_by_count": 5
     },
     {
       "title": "Achieving QoS for bursty uRLLC applications over passive optical networks",
@@ -321,7 +321,7 @@
       "doi_url": "https://doi.org/10.1364/jocn.446872",
       "openalex_url": "https://openalex.org/W4220940891",
       "pdf_url": "https://arxiv.org/pdf/2109.02186",
-      "cited_by_count": 14
+      "cited_by_count": 16
     },
     {
       "title": "Queuing Analysis of QoS Aware Microwave Power Transfer Enabled CR-IoT Network",
@@ -338,8 +338,8 @@
       "type": "article",
       "doi_url": "https://doi.org/10.1109/twc.2022.3152568",
       "openalex_url": "https://openalex.org/W4214545717",
-      "pdf_url": null,
-      "cited_by_count": 3
+      "pdf_url": "https://arxiv.org/pdf/2103.08875",
+      "cited_by_count": 5
     },
     {
       "title": "Online Slice Reconfiguration for End-to-End QoE in 6G Applications",
@@ -390,7 +390,7 @@
       "type": "article",
       "doi_url": "https://doi.org/10.1109/tgcn.2021.3093092",
       "openalex_url": "https://openalex.org/W3176014921",
-      "pdf_url": null,
+      "pdf_url": "https://arxiv.org/pdf/1909.10918",
       "cited_by_count": 5
     },
     {
@@ -408,25 +408,7 @@
       "doi_url": "https://doi.org/10.1109/tgcn.2021.3089746",
       "openalex_url": "https://openalex.org/W3176962112",
       "pdf_url": null,
-      "cited_by_count": 8
-    },
-    {
-      "title": "Queuing Analysis of Opportunistic Cognitive Radio IoT Network with Imperfect Sensing",
-      "authors": [
-        "Asif Ahmed Sardar",
-        "Dibbendu Roy",
-        "Washim Uddin Mondal",
-        "Goutam Das"
-      ],
-      "lead_author_index": 1,
-      "year": 2021,
-      "date": "2021-03-16",
-      "venue": "arXiv (Cornell University)",
-      "type": "preprint",
-      "doi_url": "https://doi.org/10.48550/arxiv.2103.08875",
-      "openalex_url": "https://openalex.org/W3139284698",
-      "pdf_url": "https://arxiv.org/pdf/2103.08875",
-      "cited_by_count": 1
+      "cited_by_count": 9
     },
     {
       "title": "A Cost Effective Architecture and Throughput Efficient Dynamic Bandwidth Allocation Protocol for Fog Computing Over EPON",
@@ -444,7 +426,7 @@
       "doi_url": "https://doi.org/10.1109/tgcn.2020.2994409",
       "openalex_url": "https://openalex.org/W3025060040",
       "pdf_url": null,
-      "cited_by_count": 20
+      "cited_by_count": 19
     },
     {
       "title": "Economics of Resilient TWDM PONs",
@@ -463,23 +445,6 @@
       "openalex_url": "https://openalex.org/W3005784241",
       "pdf_url": null,
       "cited_by_count": 1
-    },
-    {
-      "title": "Protocol design for energy efficient OLT transmitter in TWDM-PON guaranteeing SLA of up-stream and down-stream traffic",
-      "authors": [
-        "Sourav Dutta",
-        "Dibbendu Roy",
-        "Goutam Das"
-      ],
-      "lead_author_index": 1,
-      "year": 2019,
-      "date": "2019-09-24",
-      "venue": "arXiv (Cornell University)",
-      "type": "preprint",
-      "doi_url": "https://doi.org/10.48550/arxiv.1909.10918",
-      "openalex_url": "https://openalex.org/W2976828219",
-      "pdf_url": "https://arxiv.org/pdf/1909.10918",
-      "cited_by_count": 0
     },
     {
       "title": "A 1-approximation algorithm for energy-efficient TDM-PON guaranteeing SLA of up-stream and down-stream traffic",
@@ -550,7 +515,7 @@
       "doi_url": "https://doi.org/10.1364/jocn.10.000260",
       "openalex_url": "https://openalex.org/W2790879866",
       "pdf_url": "https://arxiv.org/pdf/1708.09218",
-      "cited_by_count": 22
+      "cited_by_count": 21
     },
     {
       "title": "Performance of BPSK and BFSK digital modulation schemes in colored noise scenario",
