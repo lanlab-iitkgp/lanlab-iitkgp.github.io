@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T15:54:22Z",
+  "generated": "2026-11-16T15:29:46Z",
   "source": "OpenAlex",
   "orcid": "0000-0002-2246-9905",
   "openalex_author_id": "A5053463467",
@@ -162,7 +162,7 @@
       "doi_url": "https://doi.org/10.1109/tnsm.2024.3509636",
       "openalex_url": "https://openalex.org/W4404914893",
       "pdf_url": null,
-      "cited_by_count": 3
+      "cited_by_count": 4
     },
     {
       "title": "Desynchronized Wake-Up Algorithm for Energy Efficient EPON-Based 5G Backhaul",
@@ -213,7 +213,7 @@
       "doi_url": "https://doi.org/10.1109/lnet.2023.3316390",
       "openalex_url": "https://openalex.org/W4386766852",
       "pdf_url": "https://arxiv.org/pdf/2307.08987",
-      "cited_by_count": 17
+      "cited_by_count": 18
     },
     {
       "title": "Modified Split-Rendering Architecture to Enable AI-Assisted Application-Aware MAC for XR Slice",
@@ -359,7 +359,7 @@
       "doi_url": "https://doi.org/10.48550/arxiv.2201.05187",
       "openalex_url": "https://openalex.org/W4221156981",
       "pdf_url": "https://arxiv.org/pdf/2201.05187",
-      "cited_by_count": 0
+      "cited_by_count": 1
     },
     {
       "title": "Architecture and Policy Design for Next-generation Access Networks",
